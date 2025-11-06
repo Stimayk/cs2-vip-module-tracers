@@ -34,6 +34,10 @@ public:
 	const char *GetVersion();
 	const char *GetDate();
 	const char *GetLogTag();
+private:
+    void Hook_CheckTransmit(CCheckTransmitInfo **ppInfoList, int infoCount, CBitVec<16384> &unionTransmitEdicts,
+                            CBitVec<16384> &unionTransmitAlwaysEdicts,
+                            const Entity2Networkable_t **pNetworkables, const uint16 *pEntityIndicies, int nEntities);
 };
 
 class CBulletImpactEvent : public IGameEventListener2
