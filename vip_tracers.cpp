@@ -200,7 +200,7 @@ const char *vip_tracers::GetLicense()
 
 const char *vip_tracers::GetVersion()
 {
-	return "1.0";
+	return "v1.1";
 }
 
 const char *vip_tracers::GetDate()
